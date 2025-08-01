@@ -49,8 +49,8 @@ The goal is to demonstrate the effectiveness and efficiency of 1D-CNNs for seque
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/[Your-Username]/[Repository-Name].git
-    cd [Repository-Name]
+    git clone https://github.com/Ayush03A/1D-CNN-for-Time-Series-Classification.git
+    cd [1D-CNN-for-Time-Series-Classification]
     ```
 
 2.  **Install Dependencies**
