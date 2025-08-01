@@ -31,10 +31,10 @@ The goal is to demonstrate the effectiveness and efficiency of 1D-CNNs for seque
 
 The model achieves near-perfect accuracy almost instantly, demonstrating its powerful ability to learn distinguishing features in time series data.
 
-![Training Progress](./images/terminal_output.png)
+![Training Progress](https://github.com/Ayush03A/1D-CNN-for-Time-Series-Classification/blob/6a17ee585586a8813ea44a5b707b6f751961c184/Image_1.png)
 *The model reaches 100% validation accuracy by the second epoch.*
 
-![Performance Plots](./images/output_plots.png)
+![Performance Plots](https://github.com/Ayush03A/1D-CNN-for-Time-Series-Classification/blob/6a17ee585586a8813ea44a5b707b6f751961c184/Image_2.png)
 
 -   **Model Accuracy (Left)**: The validation accuracy hits 100% and stays there, showing perfect classification on unseen data.
 -   **Training Time (Right)**: After an initial setup cost, each epoch trains in a fraction of a second.
