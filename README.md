@@ -17,31 +17,27 @@ The goal is to demonstrate the effectiveness and efficiency of 1D-CNNs for seque
 
 ## 🚀 Key Concepts & Features
 
-- **1D-CNN Architecture**
-  A Keras `Sequential` model designed specifically for 1D data.
-
-- **Parallel Processing Power**
-  Unlike RNNs, CNNs process data in parallel, making them incredibly fast on GPUs.
-
-- **Fundamental Building Blocks**
-  -  convolutions `Conv1D`: Acts as a powerful feature extractor for local temporal patterns (like rising/falling edges).
-  - pooling `MaxPooling1D`: Downsamples the sequence, creating robustness to small shifts.
+- **1D-CNN Architecture**: A Keras `Sequential` model designed specifically for 1D data.
+- **Parallel Processing Power**: Unlike RNNs, CNNs process data in parallel, making them incredibly fast on GPUs.
+- **Fundamental Building Blocks**:
+  - 📈 `Conv1D`: Acts as a powerful feature extractor for local temporal patterns (like rising/falling edges).
+  - 🔽 `MaxPooling1D`: Downsamples the sequence, creating robustness to small shifts.
   - 🌍 `GlobalMaxPooling1D`: Aggregates features across the entire sequence for a final classification vector.
-  - activation `ReLU` & `Softmax`: For non-linearity and final probability output.
-
-- **Synthetic Data Generation**
-  - 📈 The script generates its own training data, making it completely self-contained.
+- **Synthetic Data Generation**: The script generates its own training data, making it completely self-contained.
 
 ---
 
-## 📊 Dataset: Synthetic Waveforms 📈
+## 📊 Results & Output
 
-- **Type**: Synthetic 1D time series data generated via Python.
-- **Classes**: 2
-  - **Sine Waves**: `signal = sin(t) + N(0, 0.2)`
-  - **Square Waves**: `signal = sign(sin(t)) + N(0, 0.2)`
-- **Samples**: 2,000 (1,000 per class)
-- **Sequence Length**: 100 time steps per sample.
+The model achieves near-perfect accuracy almost instantly, demonstrating its powerful ability to learn distinguishing features in time series data.
+
+![Training Progress](./images/terminal_output.png)
+*The model reaches 100% validation accuracy by the second epoch.*
+
+![Performance Plots](./images/output_plots.png)
+
+-   **Model Accuracy (Left)**: The validation accuracy hits 100% and stays there, showing perfect classification on unseen data.
+-   **Training Time (Right)**: After an initial setup cost, each epoch trains in a fraction of a second.
 
 ---
 
@@ -50,7 +46,7 @@ The goal is to demonstrate the effectiveness and efficiency of 1D-CNNs for seque
 1.  **Clone the Repository**
     ```bash
     git clone https://github.com/Ayush03A/1D-CNN-for-Time-Series-Classification.git
-    cd [1D-CNN-for-Time-Series-Classification]
+    cd 1D-CNN-for-Time-Series-Classification
     ```
 
 2.  **Install Dependencies**
